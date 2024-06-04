@@ -1,0 +1,204 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(138,13,30);
+    background: linear-gradient(90deg, rgba(138,13,30,1) 31%, rgba(243,109,143,1) 89%, rgba(206,239,244,1) 100%, rgba(243,109,143,1) 100%, rgba(206,239,244,1) 100%, rgba(239,105,138,1) 100%, rgba(239,105,138,1) 100%);
+}
+#main {
+    width: 770px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.titleBox {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleBox h1 {
+    color: #8A0D1E;
+    font-size: 70px;
+    margin: 0;
+}
+.titleBox p {
+    color: rgb(100, 100, 100);
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.inputBox {
+    width: 100%;
+    height: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    width: 400px;
+    height: 28px;
+    border: 1px solid rgb(200, 200, 200);
+    outline: none;
+    font-weight: lighter;
+    padding: 1px 10px;
+    padding-left: 35px;
+    color: rgb(94, 94, 94);
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.input[type=text] {
+    background: url("./IMG/mail.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+    outline: none;
+}
+
+.input[type=password] {
+    background: url("./IMG/password.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position-x: 3px;
+    background-position-y: 3px;
+}
+
+.input:focus {
+    color: rgb(255, 0, 30);
+}
+
+.inputName {
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+    margin-top: -44px;
+    background-color: white;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.errorMessage {
+    font-size: 14px;
+    margin: 5px;
+    color: red;
+}
+
+.btn {
+    width: 600px;
+    padding: 15px 20px;
+    margin-top: 50px;
+    background: linear-gradient(90deg, rgba(138,13,30,1) 31%, rgba(243,109,143,1) 89%, rgb(223 18 101) 100%, rgba(243,109,143,1) 100%, rgb(167 32 144) 100%, rgba(239,105,138,1) 100%, rgba(239,105,138,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    height: 75px;
+}
+
+.btn:hover {
+    color: rgb(255, 0, 30);
+    background-color: rgb(244, 244, 244);
+}
+
+.inputI{
+    width: 630px;
+    height: 400px;
+}
+#menu {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #8A0D1E;
+}
+.inputName2{
+    margin-top: 10px;
+    width: 752px;
+    height: 74px;
+}
+
+#BonneRep>div{
+    display: flex;
+    flex-direction: row;
+}
+
+#BonneRep>div>p{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#MauvaiseRep>div{
+    display: flex;
+    flex-direction: row;
+}
+
+#MauvaiseRep>div>p{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.mainDiv{
+    height : 60vh;
+    width: 50vh;
+    display :flex;
+    justify-content: center;
+}
+.mainDiv > div{
+    height : 60vh;
+    width : 50%;
+    border:1px solid
+    
+}
+.current{
+    transition : position 2s;
+    transform : translateX(0);
+    transition : transform 2s;
+}
+
+.previous{
+    position: absolute;
+    height : 60vh;
+    transform : translateX(-100vw);
+    transition : transform 2s;
+}
+
+.next{
+    position: absolute;
+    height : 60vh;
+    transform : translateX(100vw);
+    transition : transform 2s;
+}
